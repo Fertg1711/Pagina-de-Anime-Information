@@ -1,0 +1,193 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+/* Varaiables */
+:root{
+    --primaryColor: rgb(38, 38, 38);
+    --primaryColorO: rgba(38, 38, 38, .8);
+    --secondaryColor: #ff0000;
+}
+
+/* Inicio CSS */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/* Nav-Bar */
+.nav {
+    background-color: var(--primaryColor);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    width: 33%;
+}
+
+.nav__logo {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin: 5px;
+}
+
+.nav__links {
+    margin: auto;
+    width: 33%;
+}
+
+.nav__link {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.nav__link:hover {
+    color: var(--secondaryColor);
+}
+
+.nav__buttons {
+    margin: auto 0;
+}
+
+.nav__cta {
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondaryColor);
+    padding: 12px;
+    margin: 9px;
+    border-radius: 20px;
+    border: solid white 2px;
+}
+
+
+/* Header */
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--primaryColorO);
+    margin-top: 45px;
+    padding: 15px ;
+
+
+
+}
+
+.img__logo {
+    width: 250px;
+    border: white solid 5px;
+    float: left;
+    margin: 0 15px;
+}
+
+.header__info{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.header__title{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+
+}
+/* Articles */
+
+
+
+.article h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.article{
+    width: 65%;
+    background-color: var(--primaryColor);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+
+.article__info {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.article__info img{
+    width: 300px;
+    border-radius: 5px;
+    float: right;
+    margin: 10px;
+}
+
+.article__info-2 img{
+    width: 300px;
+    border-radius: 5px;
+    float: left;
+    margin: 10px;
+}
+
+.article__info-2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Asides */
+
+.aside {
+    width: 25%;
+    background-color: var(--primaryColorO);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    
+}
+
+.aside h2{
+    color: white;
+    font-size: 35px;
+}
+
+.aside__list {
+    padding: 15px;
+}
+
+.aside__list-links{
+    list-style: upper-roman;
+    color: white;
+}
+
+.aside__list-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+
+}
